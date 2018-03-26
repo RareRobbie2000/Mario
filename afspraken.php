@@ -1,7 +1,9 @@
 <!DOCTYPE HTML>
 <html>  
 <body>
-
+<?php 
+    include("dbconnect.php");
+?>
 <form action="welcome.php" method="post">
 Naam: <input type="text" name="name"><br>
 E-mail: <input type="text" name="email"><br>
