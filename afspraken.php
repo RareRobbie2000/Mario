@@ -2,7 +2,28 @@
 <html>  
 <body>
 <?php 
+
+$Naam=$_GET['naam'];
+$Woonplaats=$_GET['mail'];
+$Postcode=$_GET['datum'];
+$Lidmaatschapnummer=$_GET['tijd'];
+$geboortedatum=$_GET['behandeling'];
+$Email=$_GET['kapper'];
+
+echo $Naam;
+echo $;
+echo $Adres;
+echo $Woonplaats;
+echo $Postcode;
+echo $Lidmaatschapnummer;
+echo $geboortedatum;
+echo $Email;
+echo $Wachtwoord;
+
     include("dbconnect.php");
+
+    $query="INSERT INTO klanten(id,naam,woonplaats,postcode,telefoonnummer,mail) VALUES
+    ('$id','$Naam','$Woonplaats','$Postcode','$Telefoonnummer','$Mail')";
 ?>
 <form action="welcome.php" method="post">
 Naam: <input type="text" name="name"><br>
