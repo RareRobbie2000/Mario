@@ -29,10 +29,13 @@
 ?>
 <form action="afspraken.php" method="GET">
         <table>
+            <td><input type="hidden" name="idAfspraak"></td></tr>
             <tr><td>Naam: </td>
-            <td><input name="naam"/></td></tr>
+            <td><input name="naam"></td></tr>
             <tr><td>E-Mail: </td>
-            <td><input name="mail"/></td></tr>
+            <td><input name="email"></td></tr>
+            <tr><td>Telefoonnummer: </td>
+            <td><input name="telefoonnummer"></td></tr>
             <tr><td>Datum: </td>
             <td><input type="date" name="datum"></td></tr>
             <tr><td>Tijd: </td>

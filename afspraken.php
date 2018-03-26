@@ -3,24 +3,20 @@
 <body>
 <?php 
 
+$IdAfspraak=$_GET['idAfspraak'];
 $Naam=$_GET['naam'];
-$Mail=$_GET['mail'];
+$Mail=$_GET['email'];
+$Telefoonnummer=$_GET['telefoonnummer'];
 $Datum=$_GET['datum'];
 $Tijd=$_GET['tijd'];
 $Behandeling=$_GET['behandeling'];
 $Kapper=$_GET['kapper'];
 
-echo $Naam;
-echo $Mail;
-echo $Datum;
-echo $Tijd;
-echo $Behandeling;
-echo $Kapper;
 
     include("dbconnect.php");
 
-    $query="INSERT INTO klanten(id,naam,woonplaats,postcode,telefoonnummer,mail) VALUES
-    ('$id','$Naam','$Woonplaats','$Postcode','$Telefoonnummer','$Mail')";
+    $query="INSERT INTO klanten(idAfspraak,naam,email,telefoonnummer,datum,tijd,behandeling,kapper) VALUES
+    ('$idAfspraak','$Naam','$Mail','$Telefoonnummer','$Datum','$Tijd','$Behandeling','$Kapper')";
 ?>
 
 <script type="text/javascript">
