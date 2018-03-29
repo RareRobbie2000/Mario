@@ -10,7 +10,7 @@
             <tr><td>E-Mail: </td>
             <td><input name="email"></td></tr>
             <tr><td>Telefoonnummer: </td>
-            <td><input name="telefoonnummer"></td></tr>
+            <td><input type="number" name="telefoonnummer"></td></tr>
             <tr><td>Datum: </td>
             <td><input type="date" name="datum"></td></tr>
             <tr><td>Tijd: </td>
