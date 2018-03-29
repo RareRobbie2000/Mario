@@ -2,8 +2,7 @@
 <html>  
 <body>
 <?php 
-
-$IdAfspraak=$_GET['idAfspraak'];
+$id = 0;
 $Naam=$_GET['naam'];
 $Mail=$_GET['email'];
 $Telefoonnummer=$_GET['telefoonnummer'];
@@ -14,24 +13,23 @@ $Kapper=$_GET['kapper'];
 
 
     include("dbconnect.php");
+    $query1="SELECT tijd, prijs FROM behandeling WHERE naamBehandeling ='$Behandeling'";
+    $resultaat1 = mysqli_query($con,$query1);
+    while ($rij = mysqli_fetch_array($resultaat1))
+    {
+        $tijd = $rij['tijd'];
+        $prijs = $rij['prijs'];    
+    }
 
-    $query="INSERT INTO klanten(idAfspraak,naam,email,telefoonnummer,datum,tijd,behandeling,kapper) VALUES
-    ('$idAfspraak','$Naam','$Mail','$Telefoonnummer','$Datum','$Tijd','$Behandeling','$Kapper')";
 ?>
-
-<script type="text/javascript">
-setTimeout('Redirect()',10);
-function Redirect()
-{
-  location.href = 'home.html';
-}
-</script>
 <?php
-    echo '<script language="text/javascript">';
-    echo 'alert("Afspraak is gemaakt")';
-    echo '</scipt>';
+    $query="INSERT INTO afspraken(idAfspraak,naam,email,telefoonnummer,datum,tijd,behandeling,kapper) VALUES
+    ('$id','$Naam','$Mail','$Telefoonnummer','$Datum','$Tijd','$Behandeling','$Kapper')";
+$resultaat = mysqli_query($con,$query);
 ?>
-
+de behandeling duurt: <?php echo $tijd ?> uur<br/>
+uw behandeling kost: &euro; <?php echo $prijs ?><br/>
+<input type ="button"  value="naar overzicht" onclick="window.location.href= 'home.html'"/>
 
 
 
