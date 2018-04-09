@@ -5,10 +5,6 @@
   line-height: 80px;
   text-align: center;
 }
-#geel a:link,a:visited,a:hover,a:active{
-	text-decoration: none;
-	color: darkcyan;
-}
 #paars {
   background-color: purple;
   color:white;
@@ -16,7 +12,6 @@
   line-height: 80px;
   text-align: center;
 }
-
 .container {
   padding-left:0px;
   margin-top: 20px;
@@ -26,11 +21,41 @@
   margin: auto;
 }
 
-.footer {
-    margin-top: 50px;
-	margin: 50px;
-    text-align: center;
-	background-color: blue;
+a.afspraak:link{
+  text-decoration:none;
+  color: white;
 }
+a.afspraak:visited{
+  text-decoration:none;
+  color: white;
+}
+a.afspraak:hover{
+  text-decoration:none;
+  color:white;
+}
+a.afspraak:active{
+  text-decoration:none;
+  color:white;
+}
+
+a.contact:link{
+  text-decoration:none;
+  color: black;
+}
+a.contact:visited{
+  text-decoration:none;
+  color: black;
+}
+a.contact:hover{
+  text-decoration:none;
+  color: black;
+}
+a.contact:active{
+  text-decoration:none;
+  color: black;
+}
+
+
+
 
 
