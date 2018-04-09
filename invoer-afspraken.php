@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/mario.css" rel="stylesheet">
 	
@@ -23,7 +22,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Mario</a>
+			<a href="index.html"><img src="Logo1.png" width="270" height="46" ></a>
 		</div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
@@ -35,6 +34,9 @@
 		</div>
     </div>
 </nav>
+<div class="container">
+  <div class="row">
+<div class="col-sm-12">
 <form action="afspraken.php" method="GET">
         <table>
             <tr><td>Naam: </td>
@@ -72,6 +74,7 @@
             </tr>                
         </table>      
     </form> 
+</div>
 </div>
 </div>
     <footer>
