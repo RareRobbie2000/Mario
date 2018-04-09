@@ -5,6 +5,10 @@
   line-height: 80px;
   text-align: center;
 }
+#geel a:link,a:visited,a:hover,a:active{
+	text-decoration: none;
+	color: darkcyan;
+}
 #paars {
   background-color: purple;
   color:white;
@@ -12,6 +16,7 @@
   line-height: 80px;
   text-align: center;
 }
+
 .container {
   padding-left:0px;
   margin-top: 20px;
@@ -19,6 +24,13 @@
 
 .logo{
   margin: auto;
+}
+
+.footer {
+    margin-top: 50px;
+	margin: 50px;
+    text-align: center;
+	background-color: blue;
 }
 
 
