@@ -55,8 +55,10 @@ a.contact:active{
   color: black;
 }
 
-foot{
-  background-color: black;
+.footer{
+  background-color: snow;
+  height: auto;
+  padding: 25px;
 }
 
 

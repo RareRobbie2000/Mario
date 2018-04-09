@@ -78,11 +78,14 @@
 </div>
 </div>
     <footer>
- <!--Copyright-->
-    <div class="footer-copyright py-3 text-center">
-        © 2018 Copyright:
-        <a href="https://mdbootstrap.com/material-design-for-bootstrap/"> MDBootstrap.com </a>
-    <!--/.Copyright-->
+
+    <div class="footer">
+        Tuinweg 7<br>
+		2132 DN Hoofddorp<br>
+		tel 0649283571<br>
+		mariocoiffure@hotmail.com
+    </div>
+
 
 </footer>
 
