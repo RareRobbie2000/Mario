@@ -1,6 +1,4 @@
-<!DOCTYPE HTML>
-<html>  
-<body>
+
 <?php 
 $id = 0;
 $Naam=$_GET['naam'];
@@ -27,9 +25,12 @@ $Kapper=$_GET['kapper'];
     ('$id','$Naam','$Mail','$Telefoonnummer','$Datum','$Tijd','$Behandeling','$Kapper')";
 $resultaat = mysqli_query($con,$query);
 ?>
+<?php
+    include('home2.html');
+?>
 de behandeling duurt: <?php echo $tijd ?> uur<br/>
 uw behandeling kost: &euro; <?php echo $prijs ?><br/>
-<input type ="button"  value="naar overzicht" onclick="window.location.href= 'home.html'"/>
+<input type ="button"  value="naar homepagina" onclick="window.location.href= 'home.html'"/>
 
 
 
