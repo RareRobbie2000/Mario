@@ -5,6 +5,10 @@
   line-height: 80px;
   text-align: center;
 }
+#rick:hover,active,visited{
+
+text-decoration: none;
+}
 #paars {
   background-color: purple;
   color:white;
@@ -20,3 +24,5 @@
 .logo{
   margin: auto;
 }
+
+
